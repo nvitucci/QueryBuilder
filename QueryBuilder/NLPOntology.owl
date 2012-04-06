@@ -1,0 +1,1120 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#abbrev -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#abbrev">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#acomp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#acomp">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advcl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advcl">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>advmod</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>advmods</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>advmoded</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#agent">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#arg"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#amod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#amod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#appos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#appos">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#arg -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#arg">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#attr -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#attr">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#aux -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#aux">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#auxpass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#auxpass">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#aux"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#cop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#cc -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#cc">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ccomp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ccomp">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>ccomp</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>ccomped</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>ccomps</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#arg"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#complm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#complm">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#conj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#conj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#cop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#cop">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#aux"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#csubj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#csubj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nsubj"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#subj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#csubjpass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#csubjpass">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#csubj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#det -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#det">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dobj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dobj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#obj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#expl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#expl">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#infmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#infmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#iobj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#iobj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#obj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mark -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mark">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mwe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mwe">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#neg -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#neg">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advmod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nn">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#npadvmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#npadvmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nsubj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nsubj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>nsubj</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>nsubjs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>nsubjed</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#subj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nsubjpass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nsubjpass">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nsubj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#num -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#num">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#number -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#number">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#obj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#obj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#parataxis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#parataxis">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#partmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#partmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#pcomp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#pcomp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#pobj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#pobj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#obj"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#poss -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#poss">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#possessive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#possessive">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#preconj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#preconj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#predet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#predet">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prep">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prep_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prep_in">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prt">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#punct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#punct">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#purpcl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#purpcl">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#quantmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#quantmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#rcmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#rcmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ref -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ref">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#rel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#rel">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#root -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#root">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#sdep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#sdep">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#subj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#subj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#arg"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#tmod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#tmod">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#npadvmod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#xcomp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#xcomp">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>xcomp</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>xcomped</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>xcomps</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#comp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#xsubj -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#xsubj">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#sdep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#id">
+        <ace_lexicon:TV_pl>id</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>ided</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>ids</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#lemma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#lemma">
+        <ace_lexicon:TV_sg>names</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>name</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>named</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+        <ace_lexicon:CN_sg>CC</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>CCs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#DT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#DT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#EX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#EX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#FW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#FW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#IN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#IN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+        <ace_lexicon:CN_sg>JJ</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>JJs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#LS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#LS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#MD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#MD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PDT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PDT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#POS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#POS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP_S -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP_S">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PRP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PRP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+        <ace_lexicon:CN_sg>PRP</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>PRPs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PUNCT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PUNCT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+        <ace_lexicon:CN_pl>RBs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>RB</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RBR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RBR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RBS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RBS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ROOT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ROOT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#SYM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#SYM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#TO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#TO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag">
+        <ace_lexicon:CN_pl>Tags</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Tag</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#UH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#UH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+        <ace_lexicon:CN_pl>VBs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>VB</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+        <ace_lexicon:CN_pl>VBPs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>VBP</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VBZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WDT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WDT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP_S -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP_S">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WRB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WRB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#arg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#aux"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#cc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#conj"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#expl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#parataxis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#punct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ref"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#sdep"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#abbrev"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advcl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#advmod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#amod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#appos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#det"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#infmod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mwe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#nn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#npadvmod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#num"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#number"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#partmod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#poss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#possessive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#preconj"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#predet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#prt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#purpcl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#quantmod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#rcmod"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#dobj"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#iobj"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#pobj"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#acomp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#attr"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ccomp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#complm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#mark"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#obj"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#rel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#xcomp"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#DT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#EX"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#FW"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#IN"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#LS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#MD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NN"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PDT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#POS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP_S"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PRP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PUNCT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#ROOT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#SYM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#TO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#UH"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WDT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP_S"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WRB"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#CD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#DT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#EX"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#FW"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#IN"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#JJ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#LS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#MD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#NNS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PDT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#POS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PP_S"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#PRP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#RP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#SYM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#TO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#UH"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#VB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WDT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WP_S"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2011/10/NLPOntology.owl#WRB"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
+
