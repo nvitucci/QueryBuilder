@@ -11,7 +11,6 @@ import javax.swing.JSpinner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Vector;
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -38,16 +37,13 @@ import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
 import org.semanticweb.owlapi.reasoner.SimpleConfiguration;
 
 import querying.QuerySPARQLDL;
-import querying.TypeToken;
 
 import javax.swing.JTextArea;
 import javax.swing.JList;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.border.BevelBorder;
-import javax.swing.border.LineBorder;
 
 public class Window {
-
 	private JFrame frame;
 	private QuerySPARQLDL query;
 	private OWLOntology ont;
@@ -61,6 +57,7 @@ public class Window {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		// System.out.println(System.getProperty("java.class.path"));
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

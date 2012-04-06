@@ -1,0 +1,6 @@
+Compile:
+mkdir bin
+javac -sourcepath src -d bin -cp lib/HermiT.jar:lib/org.semanticweb.HermiT.jar src/graphics/Window.java
+
+Run:
+java -cp bin:lib/HermiT.jar:lib/org.semanticweb.HermiT.jar graphics.Window
